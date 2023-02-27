@@ -1,0 +1,13 @@
+.App {
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+#dark {
+    background-color: #062226;
+}
+
+#light {
+    background-color: white;
+    color: #062226;
+}
