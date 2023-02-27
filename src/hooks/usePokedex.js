@@ -46,7 +46,7 @@ const usePokedex = () => {
     }, [pokemonsFilter, currentPage])
 
     useEffect(() => {
-        const URL = `http://pokeapi.co/api/v2/${selectType ? `type/${selectType}/` : "pokemon/?limit=1279"}`
+        const URL = `https://pokeapi.co/api/v2/${selectType ? `type/${selectType}/` : "pokemon/?limit=1279"}`
         axios.get(URL)
             .then((res) => {
                 if(selectType){
@@ -68,7 +68,7 @@ const usePokedex = () => {
     }, [pokemonName, pokemons])
     
     useEffect(() => {
-        const URL = "http://pokeapi.co/api/v2/type/"
+        const URL = "https://pokeapi.co/api/v2/type/"
         axios.get(URL)
             .then((res) => setTypes(res.data.results))
             .catch((err) => console.log(err))

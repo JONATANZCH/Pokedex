@@ -15,7 +15,7 @@ const Pokemon = () => {
     }
 
     useEffect(() => {
-        const URL = `http://pokeapi.co/api/v2/pokemon/${id}/`
+        const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
         axios.get(URL)
             .then((res) => setPokemon(res.data))
             .catch((err) => console.log(err))
