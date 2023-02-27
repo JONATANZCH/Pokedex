@@ -17,9 +17,7 @@ const Pokedex = () => {
         pagesInBlock,
         setCurrentPage,
         currentPage,
-        lastPage,
-        theme,
-        changeTheme
+        lastPage
     } = usePokedex()
 
     return (
